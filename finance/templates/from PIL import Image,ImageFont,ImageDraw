@@ -1,0 +1,8 @@
+from PIL import Image,ImageFont,ImageDraw
+im=Image.open('1.jpg')  
+draw=ImageDraw.Draw(im)  
+newfont = ImageFont.truetype('/Library/Fonts/汉仪全唐诗体简.ttf',size=70)
+draw.text((0,0),'LBR008001',(255,255,255),font=newfont)
+draw.text((50,50),u'1861在1425850',fill=(255,255,255),font=newfont)
+im.show()
+

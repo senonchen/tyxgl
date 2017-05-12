@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>欢迎光临</title>
+</head>
+<body>
+<p>新增用户：{{info.new}}</p>
+<p>老用户:{{info.old}}</p>
+<p>总消费数目:{{info.len}}</p>
+<p>消费总数：{{amounts.amounts}}</p>
+<p>实收金额：{{amounts.amounts_exclude}}</p>
+
+{% for i in TutorialList %}
+<table border="1">
+<tr>
+<td>uid:{{ i }}</td>
+</table>
+{% endfor %}
+<hr>
+{% for i in new_user_id %}
+<table border="1">
+<tr>
+<td>uid:{{ i }}</td>
+</table>
+{% endfor %}
+
+</body>
+</html>
